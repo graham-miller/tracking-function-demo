@@ -1,0 +1,8 @@
+<!-- <ng-container *ngFor="let item of items; trackBy: trackById"> -->
+<ng-container *ngFor="let item of items">
+  <app-item [item]="item"></app-item>
+</ng-container>
+
+<div>
+  <button (click)="addItem()">Add</button>
+</div>
